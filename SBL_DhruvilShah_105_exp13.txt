@@ -1,0 +1,48 @@
+class Exp13{
+  synchronized public void display(String msg)
+  {
+    System.out.print ("{"+ message);
+    try
+    {
+      Thread.sleep(1000);
+    }
+    catch(InterruptedException e)
+    {
+      e.printStackTrace();
+    }
+    System.out.println ("}");
+  }
+}
+
+class Second extends Thread
+{
+  String message;
+  First fobj;
+  Second (First fp,String str)
+  {
+    fobj = fp;
+    message = str;
+    start();
+  }
+  public void run()
+  {
+    fobj.display(message);
+  }
+}
+
+public class MyThread
+{
+  public static void main (String[] args)
+  {
+    First fnew = new First();
+    Second ss = new Second(fnew, "Dhruvil");
+    Second ss1= new Second(fnew,"Shah");
+    Second ss2 = new Second(fnew, "105");
+  }
+}
+
+
+OUTPUT:-
+{Dhruvil}
+{Shah}
+{105}

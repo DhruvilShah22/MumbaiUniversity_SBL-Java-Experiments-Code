@@ -1,0 +1,39 @@
+Exp6:-
+
+package package_name; 
+public class classone { 
+	public void methodclassone() { 
+		Scanner sc= new Scanner(System.in); 
+		System.out.print("what is your name");
+		String name= sc.nextLine();
+		System.out.println("my name is " + name);	
+	} 
+} 
+
+
+
+package package_rollnum; 
+  
+public class classtwo { 
+    public void methodclasstwo(){ 
+        System.out.println("roll number 105"); 
+    }     
+} 
+
+
+
+import package_rollnum.classtwo; 
+import package_name.classone; 
+
+public class Testing { 
+	public static void main(String[] args){ 
+		classtwo a = new classtwo(); 
+		classone b = new classone(); 
+		a.methodclasstwo(); 
+		b.methodclassone(); 
+	} 
+} 
+
+OUTPUT:-
+my name is dhruvil
+roll number 105

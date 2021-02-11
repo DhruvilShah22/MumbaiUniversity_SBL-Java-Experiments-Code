@@ -1,0 +1,21 @@
+ublic class MultipleCatchBlock3 {
+	public static void main(String[] args) {	
+		try{  
+			int a[]=new int[5];  
+			a[6]=60/0;  
+			System.out.println(a[10]);
+		}  
+		catch(ArithmeticException e){
+			System.out.println("sentence 1 occurs");}  
+		catch(ArrayIndexOutOfBoundsException e){
+			System.out.println("sentence 2 occurs");}  
+		catch(Exception e){
+			System.out.println("sentence 3 occurs");}  		  
+		System.out.println("sentence 4 occurs");  
+	}	
+}
+
+OUTPUT:-
+
+sentence 1 occurs
+sentence 4 occurs

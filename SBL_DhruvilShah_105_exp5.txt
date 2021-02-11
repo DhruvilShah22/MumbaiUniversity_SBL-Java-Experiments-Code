@@ -1,0 +1,57 @@
+5(a):-
+
+class overloading
+{
+    public void disp(char c)
+    {
+         System.out.println(c);
+    }
+    public void disp(char c, int num)  
+    {
+         System.out.println(c + " "+num);
+    }
+}
+class Sample
+{
+   public static void main(String args[])
+   {
+       overloading obj = new overloading();
+       obj.disp('a');
+       obj.disp('a',10);
+   }
+}
+
+OUTPUT:-
+a
+a 10
+
+
+5(b):-
+
+public class overloading
+{
+   private int rollNum;
+   overloading()
+   {
+      rollNum =100;
+   }
+   overloading(int rnum)
+   {
+      this();
+      rollNum = rollNum+ rnum;
+   }
+   public int getRollNum() {
+	  return rollNum;
+   }
+   public void setRollNum(int rollNum) {
+	  this.rollNum = rollNum;
+   }
+   public static void main(String args[])
+   {
+	   overloading obj = new overloading(5);
+       System.out.println(obj.getRollNum());
+    }
+}
+
+OUTPUT:-
+105

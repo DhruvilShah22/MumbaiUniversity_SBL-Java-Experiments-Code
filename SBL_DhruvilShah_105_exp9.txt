@@ -1,0 +1,15 @@
+exp(9):-
+class finaal 
+{ 
+	public static void main(String[] args) 
+	{ 
+		final intro ab = new StringBuilder("name:dhruvil"); 
+		System.out.println(ab);  
+		ab.append(" rollnum:105"); 
+		System.out.println(ab); 
+	}	 
+} 
+
+OUTPUT:-
+name:dhruvil
+name:dhruvil rollnum:105

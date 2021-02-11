@@ -1,0 +1,19 @@
+EXP 7:-
+
+class human {  
+	human(){System.out.println("a human is created");}  
+	}  
+class dhruvil extends human{  
+	dhruvil(){  
+		System.out.println("dhruvil is created");  
+		}  
+}  
+class testsuper{  
+	public static void main(String args[]){  
+		dhruvil d=new dhruvil();  
+	}
+}  
+
+OUTPUT:-
+a human is created
+dhruvil is created

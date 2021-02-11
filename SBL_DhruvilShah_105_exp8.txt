@@ -1,0 +1,62 @@
+8(a):-
+
+class calculation {
+   int z;
+	
+   public void addition(int x, int y) {
+      z = x + y;
+      System.out.println("sum of the numbers:"+z);
+   }
+	
+   public void subtraction(int x, int y) {
+      z = x - y;
+      System.out.println("difference of the numbers:"+z);
+   }
+}
+
+public class mycalculation extends calculation {
+   public void multiplication(int x, int y) {
+      z = x * y;
+      System.out.println("product of the numbers:"+z);
+   }
+	
+   public static void main(String args[]) {
+      int a = 50, b = 60;
+      mycalculation demo = new mycalculation();
+      demo.multiplication(a, b);
+      demo.subtraction(a, b);
+      demo.addition(a, b);
+   }
+}
+
+OUTPUT:-
+product of the numbers:300
+difference of the numbers:10
+sum of the numbers:110
+
+
+8(b)
+
+class Bank{
+float time = 2;
+
+}
+
+class PrincipalAmount extends Bank{
+float  PA = 10000;
+}
+
+class interest extends PrincipalAmount{
+float Interest = 5000;
+}
+
+
+class RateOfInterest extends interest{
+ public static void main(String args[]){
+float roi;
+RateOfInterest ROI = new RateOfInterest();
+ 
+ roi = ROI.Interest / (ROI.PA * ROI.time);
+ System.out.println("The rate of interest is "+roi);
+}
+}
